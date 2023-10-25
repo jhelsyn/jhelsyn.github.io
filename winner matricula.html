@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Matrícula Winner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url("colegio.jpg");
+            background-size: cover;
+            background-repeat: no-repeat;
+            background-attachment: fixed;
+            color: #070606; 
+        }
+        .header {
+    background-color: navy;
+    padding: 1px;
+    border-width: 1px;
+    margin: 1px;
+    color: white;
+}
+        h1 {
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            justify-content: center;
+        }
+        form {
+            max-width: 400px;
+            margin: 0 auto;
+            padding: 50px;
+            background-color: #b3acac;
+            border: 2px solid #f8f2f2;
+            border-radius: 5px;
+        }
+
+        form label {
+            display: block;
+            margin-bottom: 10px;
+            font-weight: bold;
+        }
+
+        form input[type="text"],
+        form input[type="date"],
+        form input[type="tel"],
+        form input[type="email"],
+        form select {
+            width: 100%;
+            padding: 10px;
+            margin-bottom: 15px;
+            border: 1px solid #f0ecec;
+            border-radius: 3px;
+            font-size: 16px;
+        }
+
+        form h2 {
+            margin: 0;
+        }
+
+        form input[type="radio"] {
+            margin-right: 10px;
+        }
+
+        form input[type="submit"] {
+            background-color: #007BFF;
+            color: #fcf7f7;
+            padding: 10px 20px;
+            border: none;
+            border-radius: 3px;
+            cursor: pointer;
+        }
+        .social-icon {
+    font-size: 80px;
+    text-decoration: none;
+}
+
+
+.facebook-icon {
+    color: #1877F2; /*Facebook */
+}
+
+.instagram-icon {
+    color: #E4405F; /*Instagram */
+}
+
+.twitter-icon {
+    color: #1DA1F2; /*Twitter */
+}
+
+.email-icon {
+    color: #D44638; /*Correo */
+}
+    .icon-right {
+        position: absolute;
+        top: 50%;
+        right: 20px;
+        transform: translateY(-50%);
+    }
+
+
+    </style>
+</head>
+<body>
+    <header class="header">
+        <span style="color:white;">
+        <h1><center><div class="inset">MATRICULAS WINNER</span></center></h1></p>
+      </header>
+      <br>
+    <form action="procesar.php" method="post">
+        <label for="nombre">Nombre y Apellidos:</label>
+        <input type="text" id="nombre" name="nombre" required placeholder="Nombre y Apellidos">
+        <br><br>
+
+        <label for="fecha_nacimiento">Fecha de Nacimiento:</label>
+        <input type="date" id="fecha_nacimiento" name="fecha_nacimiento" required>
+
+        <label for="direccion">Dirección:</label>
+        <input type="text" id="direccion" name:"direccion" required placeholder="Dirección">
+
+        <label for="telefono">Teléfono:</label>
+        <input type="tel" id="telefono" name="telefono" placeholder="Telefono o Celular">
+
+        <label for="email">Correo Electrónico:</label>
+        <input type="email" id="email" name="email" placeholder="Correo Electrónico">
+
+        <label for="grado">Grado a Matricular:</label>
+        <select id="grado" name="grado" required>
+            <option value="primero">Primero</option>
+            <option value="segundo">Segundo</option>
+            <option value="tercero">Tercero</option>
+            <option value="cuarto">Cuarto</option>
+            <option value="quinto">Quinto</option>
+            <option value="quinto">Academia</option>
+        </select>
+
+        <h2>Turno:</h2>
+        <input type="radio" id="turno_manana" name="turno" value="mañana" required>
+        <label for="turno_manana">Mañana</label>
+
+        <input type="radio" id="turno_tarde" name="turno" value="tarde" required>
+        <label for="turno_tarde">Tarde</label>
+        
+        <input type="radio" id="turno_noche" name="turno" value="noche" required>
+        <label for="turno_noche">Noche</label>
+        
+        <input type="radio" id="turno_virtual" name="turno" value="virtual" required>
+        <label for="turno_virtual">Virtual</label>
+        
+
+        <h2>Forma de pago:</h2>
+        <input type="radio" id="pago_efectivo" name="pago" value="efectivo" required>
+        <label for="pago_efectivo">Efectivo</label>
+
+        <input type="radio" id="pago_tarjeta" name="pago" value="tarjeta" required>
+        <label for="pago_tarjeta">Tarjeta de crédito</label>
+
+        <input type="submit" value="Enviar" href="f">
+        <div dir="rtl">
+            <span>
+                <input type="button" value="Imprimir página" onclick="window.print()">
+            </span>
+        </div>
+    </form>
+    <i class="fas fa-arrow-right">
+        
+        <a class="social-icon facebook-icon" href="https://es-la.facebook.com/tucuenta" target="_blank">
+            <i class="fab fa-facebook"></i>
+        </a>
+    
+        <a class="social-icon instagram-icon" href="https://www.instagram.com/tucuenta" target="_blank">
+            <i class="fab fa-instagram"></i>
+        </a>
+    
+        <a class="social-icon twitter-icon" href="https://twitter.com/tucuenta" target="_blank">
+            <i class="fab fa-twitter"></i>
+        </a>
+    
+        <a class="social-icon email-icon" href="mailto:tucorreo@example.com">
+            <i class="fas fa-envelope"></i>
+        </a>
+    </i>
+    <footer>
+        <p><span style="color:white"><b>&copy; 2023 Colegios Winner.</b></span></p>
+    </footer>
+</body>
+</html>

@@ -1,0 +1,202 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+   <title>Contactos Winner</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.3/css/all.min.css">
+
+    <style>
+        h1 {
+            text-align: center;
+            font-size: 36px;
+            position: relative; 
+        }
+
+        /* rayas */
+        .underline {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            width: 0;
+            height: 3px;
+            background-color: #f39316; 
+            animation: underlineMovement 2s infinite linear;
+        }
+        @keyframes underlineMovement {
+            0% {
+                width: 70;
+            }
+            50% {
+                width: 100%;
+            }
+            100% {
+                width: 50;
+            }
+        }
+
+        table {
+            border-collapse: separate;
+            width: 100%;
+            margin: 0 ;
+            border-spacing: 10px;
+        }
+        th, td {
+            border: 1px solid white;
+            padding: 10px;
+            text-align: left;
+            margin-bottom: 12px;
+            background-color: rgb(234, 234, 241);
+            transition: background-color 0.3s;
+            color: navy;
+            text-align: center;
+        }
+
+        /* Cambiar el color de los iconos y el texto al tocar la tabla */
+        td:hover {
+            background-color: #fdc13f; 
+            color: white; 
+        }
+
+        a {
+            text-decoration: none;
+        }
+
+        /*  los iconos */
+        .icon {
+            font-size: 24px;
+            margin-bottom: 20px;
+            transition: color 0.3s; 
+        }
+
+        /* Cambiar el color de los iconos al pasar el ratón sobre cada uno */
+        .icon-telefono:hover {
+            color: darkgreen; 
+        }
+
+        .icon-correo:hover {
+            color: darkblue; 
+        }
+
+        .icon-direccion:hover {
+            color: darkred; 
+        }
+
+        @media (max-width: 600px) {
+            table {
+                width: 100%;
+            }
+        }
+
+        
+        input[type="text"]:hover, input[type="email"]:hover, .no-hover input[type="text"]:hover, .no-hover input[type="email"]:hover {
+            background-color: rgb(234, 234, 241); 
+            color: navy; 
+        }
+        input[type="text"], input[type="email"], .no-hover input[type="text"], .no-hover input[type="email"] {
+            cursor: text;
+        }
+   .social-icon {
+    font-size: 80px;
+    text-decoration: none;
+}
+
+/* los colores para los íconos */
+.facebook-icon {
+    color: #1877F2; /*  Facebook */
+}
+
+.instagram-icon {
+    color: #E4405F; /*  Instagram */
+}
+
+.twitter-icon {
+    color: #1DA1F2; /* Twitter */
+}
+
+.email-icon {
+    color: #D44638; /* Correo */
+}
+
+
+.contact-names-table {
+    width: 60%;
+    margin: 0 auto; 
+}
+.contact-names-table td input {
+    font-size: 16px;
+    width: 100%;
+}
+
+    
+    </style>
+</head>
+<body>
+    <h1><span style="color:navy">CONTACTANOS
+        <span class="underline"></span> <!-- Agrega las rayas --> 
+    </span></h1>
+    <div style="overflow-x:auto;">
+        <table>
+            <tr>
+                <td>
+                    <i class="icon icon-telefono fas fa-phone" style="color: green;"></i>
+                    <h2>Teléfono</h2>
+                    <p>064763882 - 064655102</p>
+                </td>
+                <td>
+                    <i class="icon icon-correo fas fa-envelope" style="color: blue;"></i>
+                    <h2>Correo</h2>
+                    <p>ColegiosAcademiasWinner@gmail.com</p>
+                </td>
+                <td>
+                    <i class="icon icon-direccion fas fa-map-marker-alt" style="color: red;"></i>
+                    <h2>Dirección</h2>
+                    <p>Jirón Carhuallanqui, Huancayo 12007, Perú</p>
+                </td>
+            </tr>
+        </table>
+    </div>
+    <H2><span style="color:navy">Contacto:</span></H2>
+    <table class="no-hover contact-names-table">
+        <tr>
+            <td><input type="text" placeholder="Nombres Completos*"></td>
+        </tr>
+        <tr>
+            <td><input type="email" placeholder="Correo Electrónico*"></td>
+        </tr>
+        <tr>
+            <td><input type="email" placeholder="Telefono Fijo o Celular*"></td>
+        </tr>
+        <tr>
+            <td><input type="email" placeholder="Asunto*"></td>
+        </tr>
+        <tr>
+            <td><input type="email" placeholder="Mensaje*"></td>
+            
+        </tr>
+      
+    </table>
+    <h1><span style="color:navy">Redes Sociales</span><span class="underline"></span> 
+    </span></h1>
+<center>
+    
+    <a class="social-icon facebook-icon" href="https://es-la.facebook.com/tucuenta" target="_blank">
+        <i class="fab fa-facebook"></i>
+    </a>
+
+    <a class="social-icon instagram-icon" href="https://www.instagram.com/tucuenta" target="_blank">
+        <i class="fab fa-instagram"></i>
+    </a>
+    <a class="social-icon twitter-icon" href="https://twitter.com/tucuenta" target="_blank">
+        <i class="fab fa-twitter"></i>
+    </a>
+    <a class="social-icon email-icon" href="mailto:tucorreo@example.com">
+        <i class="fas fa-envelope"></i>
+    </a>
+</center>
+<footer>
+    <p><span style="color:navy"><b>&copy; 2023 Colegios Winner.</b></span></p>
+</footer>
+</body>
+</html>
